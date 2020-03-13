@@ -38,6 +38,11 @@ public class UserInput {
         return inputString();
     }
 
+    public String getCode() {
+        System.out.print("\tSecurity Code\t:  ");
+        return inputString();
+    }
+
     public String getPassword(int attempt) {
         if (attempt == 0) {
             System.out.print("\tPassword\t:  ");

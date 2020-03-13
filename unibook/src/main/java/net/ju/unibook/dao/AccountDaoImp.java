@@ -13,6 +13,7 @@ public class AccountDaoImp implements AccountDao {
 
     private final String EMAIL_QUERY = "SELECT * FROM account WHERE email=?";
     private final String LOGIN_QUERY = "SELECT * FROM account WHERE email=? AND password=?";
+    private final String UPDATE_QUERY = "UPDATE account SET password=? WHERE email=?";
 
     @Override
     public boolean isUsedEmail(String email) {
@@ -64,5 +65,24 @@ public class AccountDaoImp implements AccountDao {
             ConnectionManager.close(connection);
         }
         return -1;
+    }
+
+    public boolean updatePassword(String email, String password) {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = ConnectionManager.getConnection(unibookDB);
+            preparedStatement = connection.prepareStatement(UPDATE_QUERY);
+            preparedStatement.setString(1, password);
+            preparedStatement.setString(2, email);
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionManager.close(preparedStatement);
+            ConnectionManager.close(connection);
+        }
+        return false;
     }
 }

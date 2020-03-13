@@ -60,8 +60,8 @@ public class ConnectionManager {
         }
     }
 
-    public static void main(String[] args) {
-        ConnectionManager.getConnection(new Database("result"));
-        ConnectionManager.getConnection(new Database("unibook"));
-    }
+//    public static void main(String[] args) {
+//        ConnectionManager.getConnection(new Database("result"));
+//        ConnectionManager.getConnection(new Database("unibook"));
+//    }
 }

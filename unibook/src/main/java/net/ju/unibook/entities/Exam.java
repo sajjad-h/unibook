@@ -1,7 +1,8 @@
 package main.java.net.ju.unibook.entities;
 
 public class Exam {
-    private String name;
+    private int userId;
+    private String examName;
     private String roll;
     private String reg;
     private String board;

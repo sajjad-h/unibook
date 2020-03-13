@@ -1,21 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f4122d7-8616-48cc-9b31-4a86aa3aeb15" name="Default Changelist" comment="" />
+    <list default="true" id="e4f03689-2a5a-4a13-a9a4-676e6dc69143" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../github_notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/RandomThing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/RandomThing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unibook.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_codes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_codes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/META-INF/unibook.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/dao/AccountDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/dao/AccountDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/dao/AccountDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Age.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Age.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Exam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Name.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/entities/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Unibook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/main/Unibook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/AccountServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/AccountServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/PersonalInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/PersonalInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/PersonalInfoServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/PersonalInfoServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/ResultService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/ResultService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/ResultServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/services/ResultServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/ConnectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/ConnectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/UserInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/UserInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/dao/AccountDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/dao/AccountDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Unibook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Unibook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/services/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/services/AccountServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/services/AccountServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unibook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/unibook.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Z4h2daFDLD1JCiPaEDAMzm1mOX" />
+  <component name="ProjectId" id="1Z5OrPk1EddW9a2MBHaGl5jqSr3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,23 +65,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql-connector-java-8.0.19.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ConnectionManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.net.ju.unibook.utils.ConnectionManager" />
-      <module name="unibook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.net.ju.unibook.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.net.ju.unibook.main.Main" />
       <module name="unibook" />
@@ -58,7 +85,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ConnectionManager" />
       </list>
     </recent_temporary>
   </component>
@@ -79,46 +105,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f4122d7-8616-48cc-9b31-4a86aa3aeb15" name="Default Changelist" comment="" />
-      <created>1584104067397</created>
+      <changelist id="e4f03689-2a5a-4a13-a9a4-676e6dc69143" name="Default Changelist" comment="" />
+      <created>1584125686926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584104067397</updated>
+      <updated>1584125686926</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1584111752615">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584125940214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584111752615" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584110637953">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584125940214" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584125948533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584110637953" />
-    <state width="1877" height="373" key="GridCell.Tab.0.bottom" timestamp="1584114405096">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584125948533" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584125948533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584114405096" />
-    <state width="1877" height="373" key="GridCell.Tab.0.center" timestamp="1584114405096">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584125948533" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584125948533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584114405096" />
-    <state width="1877" height="373" key="GridCell.Tab.0.left" timestamp="1584114405096">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584125948533" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584125948533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584114405096" />
-    <state width="1877" height="373" key="GridCell.Tab.0.right" timestamp="1584114405096">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584125948533" />
+    <state x="440" y="95" key="SettingsEditor" timestamp="1584125942846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584114405096" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1584110642524">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584110642524" />
-    <state x="15" y="341" width="1736" height="856" key="dock-window-1" timestamp="1584112473028">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="15" y="341" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1584112473028" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584125942846" />
   </component>
 </project>

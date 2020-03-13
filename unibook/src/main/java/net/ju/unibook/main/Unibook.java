@@ -1,6 +1,7 @@
 package main.java.net.ju.unibook.main;
 
 import main.java.net.ju.unibook.services.AccountServiceImp;
+import main.java.net.ju.unibook.utils.RandomThing;
 import main.java.net.ju.unibook.utils.UserInput;
 import main.java.net.ju.unibook.utils.UserInterface;
 
@@ -19,7 +20,7 @@ public class Unibook {
         do {
             UserInterface.showHeader("Welcome to University Admission System");
             if (tryAgain == true) {
-                UserInterface.showMsg("Try again please!");
+                UserInterface.showMsg("Login please!");
             }
             UserInterface.showStartMenu();
             option = UserInput.getInstance().inputOption();
@@ -28,13 +29,47 @@ public class Unibook {
                 case 1:
                     this.login();
                     break;
+                case 2:
+                    break;
+                case 3:
+                    this.forgotPassword();
+                    break;
             }
 
 
             tryAgain = true;
         }
-        while (option != 3);
+        while (option != 4);
         UserInterface.showMsg("Thank you!");
+    }
+
+    public void forgotPassword() {
+        UserInterface.showHeader("Welcome to University Admission System");
+        UserInterface.showMsg("Forgot Password!", 0);
+        String email = UserInput.getInstance().getEmail();
+        if (accountServiceImp.isUsedEmail(email)) {
+
+            accountServiceImp.sendEmail(email);
+            UserInterface.showMsg("We sent an email to you with a security code. Type it here!");
+            String code = RandomThing.getAlphaNumericString(6);
+            UserInterface.showMsg("Generated Code: " + code, 1);
+            String typedCode = UserInput.getInstance().getCode();
+            if (code.equals(typedCode)) {
+                UserInterface.showMsg("Code matched!", 0);
+                String password = UserInput.getInstance().getPassword(0);
+                String confirmPassword = UserInput.getInstance().getPassword(1);
+                if (password.equals(confirmPassword)) {
+                    accountServiceImp.forgotPassword(email, password);
+                    UserInterface.showMsg("Password Changed Successfully!", 0);
+                }
+            }
+            else {
+                UserInterface.showMsg("Wrong Code!", 0);
+            }
+        }
+        else {
+            UserInterface.showMsg("Wrong email!", 0);
+        }
     }
 
     public void login() {
@@ -46,7 +81,7 @@ public class Unibook {
             if (tryAgain == true) {
                 boolean wrongChoice = false;
                 do {
-                    UserInterface.showHeader("Welcome to University Admission System");
+                    //UserInterface.showHeader("Welcome to University Admission System");
                     UserInterface.showLoginMenu();
                     if (wrongChoice == true) {
                         UserInterface.showMsg("Wrong Choice! Try again...");
@@ -56,6 +91,11 @@ public class Unibook {
                         break;
                     }
                     else if (option == 2) {
+                        this.forgotPassword();
+                        goBack = true;
+                        break;
+                    }
+                    else if (option == 3) {
                         goBack = true;
                         break;
                     }
@@ -83,6 +123,7 @@ public class Unibook {
                 loggedIn = true;
             }
             else {
+                UserInterface.showMsg("Uffu! Invalid Username or password!", 0);
                 tryAgain = true;
             }
             if (loggedIn == true) {

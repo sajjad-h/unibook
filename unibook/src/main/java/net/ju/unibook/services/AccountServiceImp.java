@@ -24,4 +24,14 @@ public class AccountServiceImp implements AccountService {
     public int login(String email, String password) {
         return accountDaoImp.login(email, password);
     }
+
+    @Override
+    public boolean forgotPassword(String email, String password) {
+        return accountDaoImp.updatePassword(email, password);
+    }
+
+    @Override
+    public void sendEmail(String email) {
+
+    }
 }

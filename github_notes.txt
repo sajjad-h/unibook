@@ -1,0 +1,13 @@
+
+
+git status
+
+git add .
+
+git commit -m "msg"
+
+git remote add origin https://github.com/me/repo.git
+
+git push -u origin master
+
+git clone https://github.com/me/repo.git
