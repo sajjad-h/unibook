@@ -2,6 +2,7 @@ package main.java.net.ju.unibook.services;
 
 
 import main.java.net.ju.unibook.dao.AccountDaoImp;
+import main.java.net.ju.unibook.utils.JavaMailUtil;
 
 public class AccountServiceImp implements AccountService {
     private AccountDaoImp accountDaoImp;
@@ -31,7 +32,7 @@ public class AccountServiceImp implements AccountService {
     }
 
     @Override
-    public void sendEmail(String email) {
-
+    public void sendEmail(String email, String code) throws Exception {
+        JavaMailUtil.sendMail(email, code);
     }
 }

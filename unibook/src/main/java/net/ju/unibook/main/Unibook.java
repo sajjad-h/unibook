@@ -14,7 +14,7 @@ public class Unibook {
         accountServiceImp = new AccountServiceImp();
     }
 
-    public void run() {
+    public void run() throws Exception {
         int option = 0;
         boolean tryAgain = false;
         do {
@@ -43,16 +43,16 @@ public class Unibook {
         UserInterface.showMsg("Thank you!");
     }
 
-    public void forgotPassword() {
+    public void forgotPassword() throws Exception {
         UserInterface.showHeader("Welcome to University Admission System");
         UserInterface.showMsg("Forgot Password!", 0);
         String email = UserInput.getInstance().getEmail();
         if (accountServiceImp.isUsedEmail(email)) {
 
-            accountServiceImp.sendEmail(email);
-            UserInterface.showMsg("We sent an email to you with a security code. Type it here!");
             String code = RandomThing.getAlphaNumericString(6);
-            UserInterface.showMsg("Generated Code: " + code, 1);
+            accountServiceImp.sendEmail(email, code);
+            UserInterface.showMsg("We sent an email to you with a security code. Type it here!");
+            //UserInterface.showMsg("Generated Code: " + code, 1);
             String typedCode = UserInput.getInstance().getCode();
             if (code.equals(typedCode)) {
                 UserInterface.showMsg("Code matched!", 0);
@@ -72,7 +72,7 @@ public class Unibook {
         }
     }
 
-    public void login() {
+    public void login() throws Exception {
         int option = 0;
         boolean tryAgain = false;
         boolean goBack = false;
