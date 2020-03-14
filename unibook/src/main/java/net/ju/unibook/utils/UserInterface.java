@@ -51,8 +51,14 @@ public class UserInterface {
 
     public static void showLoginMenu() {
         System.out.println("Which one you want to do? ...");
-        System.out.println("\t1. Try again");
+        System.out.println("\t1. Login again");
         System.out.println("\t2. Forgot Password");
         System.out.println("\t3. Back");
+    }
+
+    public static void showSignUpMenu() {
+        System.out.println("Which one you want to do? ...");
+        System.out.println("\t1. SignUp again");
+        System.out.println("\t2. Back");
     }
 }

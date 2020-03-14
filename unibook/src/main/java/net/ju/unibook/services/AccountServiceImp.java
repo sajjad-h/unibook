@@ -2,6 +2,8 @@ package main.java.net.ju.unibook.services;
 
 
 import main.java.net.ju.unibook.dao.AccountDaoImp;
+import main.java.net.ju.unibook.entities.Exam;
+import main.java.net.ju.unibook.main.Account;
 import main.java.net.ju.unibook.utils.JavaMailUtil;
 
 public class AccountServiceImp implements AccountService {
@@ -17,8 +19,8 @@ public class AccountServiceImp implements AccountService {
     }
 
     @Override
-    public boolean addNewAccount(String email, String password) {
-        return false;
+    public boolean addNewAccount(int userId, String email, String password, String phoneNo) {
+        return accountDaoImp.addNewAccount(userId, email, password, phoneNo);
     }
 
     @Override
@@ -34,5 +36,15 @@ public class AccountServiceImp implements AccountService {
     @Override
     public void sendEmail(String email, String code) throws Exception {
         JavaMailUtil.sendMail(email, code);
+    }
+
+    @Override
+    public boolean isRegistered(int userId) {
+        return false;
+    }
+
+    @Override
+    public int isValidStudent(Exam exam) {
+        return accountDaoImp.isValidStudent(exam);
     }
 }

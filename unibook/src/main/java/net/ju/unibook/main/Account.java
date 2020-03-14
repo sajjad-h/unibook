@@ -8,6 +8,7 @@ import main.java.net.ju.unibook.utils.UserInterface;
 public class Account {
     private int userId;
     private String email;
+    private String phoneNo;
     private UserInfo userInfo;
     private Result result;
 
@@ -23,4 +24,5 @@ public class Account {
         System.out.println("Ha ha hi hi\n");
         int option = UserInput.getInstance().inputInteger();
     }
+
 }

@@ -38,6 +38,26 @@ public class UserInput {
         return inputString();
     }
 
+    public String getRoll() {
+        System.out.print("\tRoll No \t:  ");
+        return inputString();
+    }
+
+    public String getReg() {
+        System.out.print("\tReg No  \t:  ");
+        return inputString();
+    }
+
+    public String getBoard() {
+        System.out.print("\tBoard   \t:  ");
+        return inputString();
+    }
+
+    public String getPhoneNo() {
+        System.out.print("\tPhone No\t:  ");
+        return inputString();
+    }
+
     public String getCode() {
         System.out.print("\tSecurity Code\t:  ");
         return inputString();
