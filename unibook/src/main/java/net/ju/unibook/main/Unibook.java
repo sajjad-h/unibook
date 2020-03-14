@@ -200,12 +200,10 @@ public class Unibook {
             UserInterface.showMsg("Login please!");
             String email;
             String password;
-            int userId = -1;
             email = UserInput.getInstance().getEmail();
             password = UserInput.getInstance().getPassword(0);
-            userId = accountServiceImp.login(email, password);
-            if (userId != -1) {
-                account = new Account(userId, email);
+            Account account = accountServiceImp.login(email, password);
+            if (account != null) {
                 UserInterface.showMsg("Successfully Logged in, Welcome!");
                 account.run();
                 loggedIn = true;
@@ -215,7 +213,7 @@ public class Unibook {
                 tryAgain = true;
             }
             if (loggedIn == true) {
-                UserInterface.showMsg("Successfully Logged Out!");
+                //UserInterface.showMsg("Successfully Logged Out!");
                 break;
             }
         }

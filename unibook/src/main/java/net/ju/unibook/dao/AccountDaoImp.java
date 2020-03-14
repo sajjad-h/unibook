@@ -11,8 +11,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AccountDaoImp implements AccountDao {
-    private final static Database unibookDB = new Database("unibook");
-    private final static Database resultDB = new Database("result");
+    private final static Database UNIBOOK_DB = new Database("unibook");
+    private final static Database RESULT_DB = new Database("result");
 
     private final String EMAIL_QUERY = "SELECT * FROM account WHERE email=?";
     private final String USER_ID_QUERY = "SELECT * FROM account WHERE userId=?";
@@ -27,7 +27,7 @@ public class AccountDaoImp implements AccountDao {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = ConnectionManager.getConnection(unibookDB);
+            connection = ConnectionManager.getConnection(UNIBOOK_DB);
             preparedStatement = connection.prepareStatement(EMAIL_QUERY);
             preparedStatement.setString(1, email);
             resultSet = preparedStatement.executeQuery();
@@ -50,7 +50,7 @@ public class AccountDaoImp implements AccountDao {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = ConnectionManager.getConnection(unibookDB);
+            connection = ConnectionManager.getConnection(UNIBOOK_DB);
             preparedStatement = connection.prepareStatement(ADD_ACC_QUERY);
             preparedStatement.setInt(1, userId);
             preparedStatement.setString(2, email);
@@ -68,18 +68,18 @@ public class AccountDaoImp implements AccountDao {
     }
 
     @Override
-    public int login(String email, String password) {
+    public Account login(String email, String password) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = ConnectionManager.getConnection(unibookDB);
+            connection = ConnectionManager.getConnection(UNIBOOK_DB);
             preparedStatement = connection.prepareStatement(LOGIN_QUERY);
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                return resultSet.getInt(1);
+                return (new Account(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(4)));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -88,14 +88,14 @@ public class AccountDaoImp implements AccountDao {
             ConnectionManager.close(preparedStatement);
             ConnectionManager.close(connection);
         }
-        return -1;
+        return null;
     }
 
     public boolean updatePassword(String email, String password) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
-            connection = ConnectionManager.getConnection(unibookDB);
+            connection = ConnectionManager.getConnection(UNIBOOK_DB);
             preparedStatement = connection.prepareStatement(UPDATE_QUERY);
             preparedStatement.setString(1, password);
             preparedStatement.setString(2, email);
@@ -116,7 +116,7 @@ public class AccountDaoImp implements AccountDao {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = ConnectionManager.getConnection(resultDB);
+            connection = ConnectionManager.getConnection(RESULT_DB);
             preparedStatement = connection.prepareStatement(VALID_STUDENT_QUERY);
             preparedStatement.setString(1, exam.getRoll());
             preparedStatement.setString(2, exam.getReg());
@@ -141,7 +141,7 @@ public class AccountDaoImp implements AccountDao {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = ConnectionManager.getConnection(unibookDB);
+            connection = ConnectionManager.getConnection(UNIBOOK_DB);
             preparedStatement = connection.prepareStatement(USER_ID_QUERY);
             preparedStatement.setInt(1, userId);
             resultSet = preparedStatement.executeQuery();

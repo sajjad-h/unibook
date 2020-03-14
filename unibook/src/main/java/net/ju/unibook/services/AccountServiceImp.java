@@ -24,7 +24,7 @@ public class AccountServiceImp implements AccountService {
     }
 
     @Override
-    public int login(String email, String password) {
+    public Account login(String email, String password) {
         return accountDaoImp.login(email, password);
     }
 

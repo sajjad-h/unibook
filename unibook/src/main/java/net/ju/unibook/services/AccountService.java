@@ -10,5 +10,5 @@ public interface AccountService {
     boolean addNewAccount(int userId, String email, String password, String phoneNo);
     boolean forgotPassword(String email, String password);
     void sendEmail(String email, String code) throws Exception;
-    int login(String email, String password);
+    Account login(String email, String password);
 }

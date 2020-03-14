@@ -1,7 +1,7 @@
-package main.java.net.ju.unibook.services;
+package main.java.net.ju.unibook.dao;
 
 import main.java.net.ju.unibook.entities.UserInfo;
 
-public interface PersonalInfoService {
+public interface PersonalInfoDao {
     UserInfo getPersonalInfo(int userId);
 }

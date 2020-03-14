@@ -1,7 +1,7 @@
-package main.java.net.ju.unibook.services;
+package main.java.net.ju.unibook.dao;
 
 import main.java.net.ju.unibook.entities.Result;
 
-public interface ResultService {
+public interface ResultDao {
     Result getResultInfo(int userId);
 }

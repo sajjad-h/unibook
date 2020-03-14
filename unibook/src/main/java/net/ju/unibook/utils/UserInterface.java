@@ -49,6 +49,17 @@ public class UserInterface {
         System.out.println("\t4. Quit");
     }
 
+    public static void showUserStartMenu() {
+        System.out.println("Which one you want to do? ...");
+        System.out.println("\t1. See profile");
+        System.out.println("\t2. Show University");
+        System.out.println("\t3. Apply for University");
+        System.out.println("\t4. See Applications");
+        System.out.println("\t5. See Exam Schedule");
+        System.out.println("\t6. See Result");
+        System.out.println("\t7. Logout");
+    }
+
     public static void showLoginMenu() {
         System.out.println("Which one you want to do? ...");
         System.out.println("\t1. Login again");
