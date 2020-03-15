@@ -1,5 +1,7 @@
 package main.java.net.ju.unibook.entities;
 
+import main.java.net.ju.unibook.utils.UserInterface;
+
 import java.util.Date;
 
 public class UserInfo {
@@ -30,6 +32,29 @@ public class UserInfo {
         this.age = age;
         this.religion = religion;
         this.nationality = nationality;
+    }
+
+    public void showUserInfo() {
+        System.out.println("Personal Details: ");
+        System.out.println();
+        System.out.print("Name: ");
+        System.out.println(name.getFullName());
+        System.out.print("Father Name: ");
+        System.out.println(fatherName.getFullName());
+        System.out.print("Mother Name: ");
+        System.out.println(motherName.getFullName());
+        System.out.print("Sex: ");
+        System.out.println(sex);
+        System.out.print("Address: ");
+        System.out.println(address.getAddress());
+        System.out.print("Birth of Date: ");
+        System.out.println(birthOfDate);
+        System.out.print("Age: ");
+        System.out.println(age.getYears());
+        System.out.print("Religion: ");
+        System.out.println(religion);
+        System.out.print("Nationality: ");
+        System.out.println(nationality);
     }
 
     public int getUserId() {
@@ -112,7 +137,4 @@ public class UserInfo {
         this.nationality = nationality;
     }
 
-    public void showUserInfo() {
-
-    }
 }

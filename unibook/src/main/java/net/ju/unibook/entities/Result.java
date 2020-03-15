@@ -18,6 +18,16 @@ public class Result {
         this.canParticipate = canParticipate;
     }
 
+    public void showResult() {
+        System.out.println("Educational Info: ");
+        System.out.println();
+        ssc.showExamInfo();
+        System.out.println();
+        System.out.println();
+        hsc.showExamInfo();
+        System.out.println();
+    }
+
     public Exam getSsc() {
         return ssc;
     }

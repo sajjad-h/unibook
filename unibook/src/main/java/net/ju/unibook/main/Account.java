@@ -96,7 +96,7 @@ public class Account {
         long totalSeconds;
         now = System.currentTimeMillis();
         pre = userInfo.getBirthOfDate().getTime();
-        totalSeconds = (now - pre) * 1000;
+        totalSeconds = (now - pre) / 1000;
         totalDays = totalSeconds / (24 * 3600);
         years = (int) (totalDays / 365);
         days = (int) (totalDays % 365);
@@ -136,6 +136,40 @@ public class Account {
     }
 
     public void showProfile() {
+        System.out.println();
+        System.out.println();
+        userInfo.showUserInfo();
+        System.out.println();
+        System.out.println();
+        showContactDetails();
+        System.out.println();
+        System.out.println();
+        result.showResult();
 
+
+        int option = 0;
+        boolean goBack = false;
+        do {
+            UserInterface.showProfileMenu();
+            option = UserInput.getInstance().inputOption();
+            switch (option) {
+                case 1:
+                    goBack = true;
+                    break;
+                default:
+                    UserInterface.showMsg("Try again!");
+                    break;
+            }
+        }
+        while (!goBack);
+    }
+
+    public void showContactDetails() {
+        System.out.println("Contact Details: ");
+        System.out.println();
+        System.out.print("Phone no: ");
+        System.out.println(phoneNo);
+        System.out.print("E-mail: ");
+        System.out.println(email);;
     }
 }

@@ -34,6 +34,25 @@ public class Exam {
         this.board = board;
     }
 
+    public void showExamInfo() {
+        System.out.print("Exam Name: ");
+        System.out.println(examName);
+        System.out.print("Roll: ");
+        System.out.println(roll);
+        System.out.print("Reg: ");
+        System.out.println(reg);
+        System.out.print("Board: ");
+        System.out.println(board);
+        System.out.print("Passing year: ");
+        System.out.println(passingYear);
+        System.out.print("GPA: ");
+        System.out.println(gpa);
+        System.out.print("Status: ");
+        System.out.println(status);
+        System.out.print("Group: ");
+        System.out.println(group);
+    }
+
     public int getUserId() {
         return userId;
     }

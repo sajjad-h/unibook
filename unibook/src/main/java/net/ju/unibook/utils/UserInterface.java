@@ -72,4 +72,9 @@ public class UserInterface {
         System.out.println("\t1. SignUp again");
         System.out.println("\t2. Back");
     }
+
+    public static void showProfileMenu() {
+        System.out.println("Which one you want to do? ...");
+        System.out.println("\t1. Back");
+    }
 }

@@ -25,7 +25,6 @@ public class PersonalInfoDaoImp implements PersonalInfoDao {
             preparedStatement.setInt(1, userId);
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                System.out.println("loading started");
                 UserInfo userInfo = new UserInfo(userId);
                 userInfo.setName(new Name(resultSet.getString(2), resultSet.getString(3), resultSet.getString(4)));
                 userInfo.setFatherName(new Name(resultSet.getString(5), resultSet.getString(6), resultSet.getString(7)));
@@ -33,7 +32,6 @@ public class PersonalInfoDaoImp implements PersonalInfoDao {
                 userInfo.setSex(resultSet.getString(11));
                 userInfo.setAddress(new Address(resultSet.getString(12), resultSet.getString(13), resultSet.getString(14), resultSet.getString(15), resultSet.getString(16), resultSet.getString(17), resultSet.getString(18)));
                 userInfo.setBirthOfDate(new java.util.Date(resultSet.getDate(19).getTime()));
-                System.out.println(userInfo.getBirthOfDate());
                 userInfo.setAge(new Age(resultSet.getInt(20)));
                 userInfo.setReligion(resultSet.getString(21));
                 userInfo.setNationality(resultSet.getString(22));

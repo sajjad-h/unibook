@@ -74,4 +74,8 @@ public class Address {
     public void setDistrict(String district) {
         this.district = district;
     }
+
+    public String getAddress() {
+        return (houseNo + ", " + streetNo + ", " + village + ", " + postOffice + " - " + postCode + ", " + subDistrict + ", " + district);
+    }
 }
