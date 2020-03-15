@@ -123,6 +123,9 @@ public class Account {
             option = UserInput.getInstance().inputOption();
 
             switch (option) {
+                case 1:
+                    this.showProfile();
+                    break;
                 case 7:
                     loggedIn = false;
                     break;
@@ -130,5 +133,9 @@ public class Account {
         }
         while (loggedIn);
         UserInterface.showMsg("Successfully Logged Out!");
+    }
+
+    public void showProfile() {
+
     }
 }

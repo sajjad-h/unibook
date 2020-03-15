@@ -111,4 +111,8 @@ public class UserInfo {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
+
+    public void showUserInfo() {
+
+    }
 }

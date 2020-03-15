@@ -144,12 +144,19 @@ public class Unibook {
             String typedCode = UserInput.getInstance().getCode();
             if (code.equals(typedCode)) {
                 UserInterface.showMsg("Code matched!", 0);
-                String password = UserInput.getInstance().getPassword(0);
-                String confirmPassword = UserInput.getInstance().getPassword(1);
-                if (password.equals(confirmPassword)) {
+                do {
+                    String password = UserInput.getInstance().getPassword(0);
+                    String confirmPassword = UserInput.getInstance().getPassword(1);
+                    if (!password.equals(confirmPassword)) {
+                        UserInterface.showMsg("Uffu! Password didn't match! Try Again!", 0);
+                        continue;
+                    }
                     accountServiceImp.forgotPassword(email, password);
                     UserInterface.showMsg("Password Changed Successfully!", 0);
+                    break;
                 }
+                while (true);
+
             }
             else {
                 UserInterface.showMsg("Wrong Code!", 0);
