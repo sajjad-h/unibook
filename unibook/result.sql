@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 13, 2020 at 06:44 PM
+-- Generation Time: Mar 16, 2020 at 06:16 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -39,14 +39,16 @@ CREATE TABLE IF NOT EXISTS `hsc` (
   `status` varchar(10) NOT NULL,
   `group_` varchar(20) NOT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `hsc`
 --
 
 INSERT INTO `hsc` (`userId`, `roll`, `reg`, `board`, `passing_year`, `gpa`, `status`, `group_`) VALUES
-(1, '141989', '1218733671', 'Dhaka', 2017, 4.58, 'pass', 'Science');
+(1, '141989', '1218733671', 'Dhaka', 2017, 4.58, 'pass', 'Science'),
+(2, '127612', '1278561209', 'Dhaka', 2017, 5, 'pass', 'Science'),
+(3, '138434', '1210914765', 'Dhaka', 2017, 5, 'pass', 'Science');
 
 -- --------------------------------------------------------
 
@@ -65,14 +67,16 @@ CREATE TABLE IF NOT EXISTS `ssc` (
   `status` varchar(10) NOT NULL,
   `group_` varchar(20) NOT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `ssc`
 --
 
 INSERT INTO `ssc` (`userId`, `roll`, `reg`, `board`, `passing_year`, `gpa`, `status`, `group_`) VALUES
-(1, '120544', '1218733671', 'Dhaka', 2015, 4.83, 'pass', 'Science');
+(1, '120544', '1218733671', 'Dhaka', 2015, 4.83, 'pass', 'Science'),
+(2, '127610', '1278561209', 'Dhaka', 2015, 5, 'pass', 'Science'),
+(3, '113145', '1210914765', 'Dhaka', 2015, 5, 'pass', 'Science');
 
 -- --------------------------------------------------------
 
@@ -105,14 +109,16 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `religion` varchar(30) NOT NULL,
   `nationality` varchar(30) NOT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_info`
 --
 
 INSERT INTO `user_info` (`userId`, `first_name`, `last_name`, `nick_name`, `father_first_name`, `father_last_name`, `father_nick_name`, `mother_first_name`, `mother_last_name`, `mother_nick_name`, `sex`, `house_no`, `street_no`, `village`, `post_office`, `post_code`, `sub_district`, `district`, `birth_of_date`, `religion`, `nationality`) VALUES
-(1, 'Sajjad', 'Hossain', 'Sajjad', 'Abul', 'Kashem', 'Kawsar', 'Nasima', 'Akter', 'Nasima', 'Male', 'KA-512', '24/A', 'Madhobpur', 'Bhawal Rajabari', '1740', 'Sreepur', 'Gazipur', '1998-05-27', 'Islam', 'Bangladeshi');
+(1, 'Sajjad', 'Hossain', 'Sajjad', 'Abul', 'Kashem', 'Kawsar', 'Nasima', 'Akter', 'Nasima', 'Male', 'KA-512', '24/A', 'Madhobpur', 'Bhawal Rajabari', '1740', 'Sreepur', 'Gazipur', '1998-05-27', 'Islam', 'Bangladeshi'),
+(2, 'Mahmuda', 'Akter', 'Tani', 'Abu', 'Bakar', 'Kazi', 'Shahida', 'Begum', 'Shahida', 'Female', '12/A', '7', 'Kalabagan', 'Jahangirnagar University', '1342', 'Savar', 'Dhaka', '1999-02-21', 'Islam', 'Bangladeshi'),
+(3, 'Mahbub Islam', 'Mahim', 'Mahim', 'S M Rezaul', 'Karim', 'Rezaul', 'Nurjahan ', 'Begum', 'Nurjahan', 'Male', '56/7', '56', 'Jamsing', 'BPATC', '1343', 'Savar', 'Dhaka', '1998-10-18', 'Islam', 'Bangladeshi');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 13, 2020 at 06:44 PM
+-- Generation Time: Mar 16, 2020 at 06:16 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -42,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `account` (
 --
 
 INSERT INTO `account` (`userId`, `email`, `password`, `phone_no`) VALUES
-(1000, 'hoosain.sajjad@gmail.com', '1234', '01755367448'),
-(1001, 'sajjad.h@gmail.com', '12345', '01305264747'),
-(1002, 'sajjad-ju@gmail.com', '123456', '01345678910');
+(3, 'mahimislam70@gmail.com', 'sajjadboss', '01982474475'),
+(1, 'hoosain.sajjad@gmail.com', 'amigoodboy', '01755367448'),
+(2, 'mowriful786@gmail.com', 'amigoodgirl', '01305264747');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
