@@ -2,6 +2,7 @@ package main.java.net.ju.unibook.utils;
 
 public class UserInterface {
     private static final int SCREEN_WIDTH = 67;
+    public static final String COMMON = "+-|";
 
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
@@ -10,34 +11,101 @@ public class UserInterface {
 
     public static void showHeader(String msg) {
         System.out.println("=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=");
-        showMsg(msg, 0);
+        showMessage(msg, 0);
         System.out.println("=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=");
 
     }
 
-    public static void showMsg(String msg) {
-        showMsg(msg, 0);
+    public static void showMessage(String message) {
+        showMessage(message, 0);
     }
 
-    public static void showMsg(String msg, int justification) {
+    public static void showMessage(String message, String design, int justification) {
+        int messageLen = message.length() + 2;
         if (justification == 0) {
-            int msgLen = msg.length();
-            int need = (SCREEN_WIDTH - msgLen) / 2;
+            int need = (SCREEN_WIDTH - messageLen - 2) / 2;
             for (int i = 0; i < need; i++) {
                 System.out.print(' ');
             }
-            System.out.println(msg);
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
+
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.println(design.charAt(2) + " " + message + " " + design.charAt(2));
+
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
         }
         else if (justification == 1) {
-            int msgLen = msg.length();
-            int need = (SCREEN_WIDTH - msgLen);
+            int need = (SCREEN_WIDTH - messageLen - 2);
             for (int i = 0; i < need; i++) {
                 System.out.print(' ');
             }
-            System.out.println(msg);
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
+
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.println(design.charAt(2) + " " + message + " " + design.charAt(2));
+
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
         }
         else {
-            System.out.println(msg);
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
+            System.out.println(design.charAt(2) + " " + message + " " + design.charAt(2));
+            System.out.print(design.charAt(0));
+            for (int i = 0; i < messageLen; i++) {
+                System.out.print(design.charAt(1));
+            }
+            System.out.println(design.charAt(0));
+        }
+    }
+
+
+    public static void showMessage(String message, int justification) {
+        int messageLen = message.length();
+        if (justification == 0) {
+            int need = (SCREEN_WIDTH - messageLen) / 2;
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.println(message);
+        }
+        else if (justification == 1) {
+            int need = (SCREEN_WIDTH - messageLen);
+            for (int i = 0; i < need; i++) {
+                System.out.print(' ');
+            }
+            System.out.println(message);
+        }
+        else {
+            System.out.println(message);
         }
     }
 

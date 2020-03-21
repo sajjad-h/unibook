@@ -1,5 +1,7 @@
 package main.java.net.ju.unibook.entities;
 
+import main.java.net.ju.unibook.utils.UserInterface;
+
 public class Result {
     private Exam ssc;
     private Exam hsc;
@@ -19,13 +21,10 @@ public class Result {
     }
 
     public void showResult() {
-        System.out.println("Educational Info: ");
         System.out.println();
+        UserInterface.showMessage("Education Details: ", UserInterface.COMMON, -1);
         ssc.showExamInfo();
-        System.out.println();
-        System.out.println();
         hsc.showExamInfo();
-        System.out.println();
     }
 
     public Exam getSsc() {

@@ -21,7 +21,7 @@ public class Unibook {
         do {
             UserInterface.showHeader("Welcome to University Admission System");
             if (tryAgain == true) {
-                UserInterface.showMsg("Login please!");
+                UserInterface.showMessage("Login please!");
             }
             UserInterface.showStartMenu();
             option = UserInput.getInstance().inputOption();
@@ -42,7 +42,7 @@ public class Unibook {
             tryAgain = true;
         }
         while (option != 4);
-        UserInterface.showMsg("Thank you!");
+        UserInterface.showMessage("Thank you!");
     }
 
     public void signUp() {
@@ -56,7 +56,7 @@ public class Unibook {
                     //UserInterface.showHeader("Welcome to University Admission System");
                     UserInterface.showSignUpMenu();
                     if (wrongChoice == true) {
-                        UserInterface.showMsg("Wrong Choice! Try again...");
+                        UserInterface.showMessage("Wrong Choice! Try again...");
                     }
                     option = UserInput.getInstance().inputOption();
                     if (option == 1) {
@@ -76,7 +76,7 @@ public class Unibook {
                 break;
             }
             UserInterface.showHeader("Welcome to University Admission System");
-            UserInterface.showMsg("Sign-up please!");
+            UserInterface.showMessage("Sign-up please!");
             String roll;
             String reg;
             String board;
@@ -85,12 +85,12 @@ public class Unibook {
             board = UserInput.getInstance().getBoard();
             int userId = accountServiceImp.isValidStudent(new Exam(roll, reg, board));
             if (userId == -1) {
-                UserInterface.showMsg("Wrong Information! Try again!", 0);
+                UserInterface.showMessage("Wrong Information! Try again!", 0);
                 tryAgain = true;
                 continue;
             }
             if (accountServiceImp.isRegistered(userId)) {
-                UserInterface.showMsg("Uffu! You are already registered!", 0);
+                UserInterface.showMessage("Uffu! You are already registered!", 0);
                 tryAgain = true;
                 continue;
             }
@@ -101,7 +101,7 @@ public class Unibook {
             do {
                 email = UserInput.getInstance().getEmail();
                 if (accountServiceImp.isUsedEmail(email)) {
-                    UserInterface.showMsg("Uffu! Already used email! Try Again!", 0);
+                    UserInterface.showMessage("Uffu! Already used email! Try Again!", 0);
                     continue;
                 }
                 break;
@@ -112,7 +112,7 @@ public class Unibook {
                 password = UserInput.getInstance().getPassword(0);
                 confirmPassword = UserInput.getInstance().getPassword(1);
                 if (!password.equals(confirmPassword)) {
-                    UserInterface.showMsg("Uffu! Password didn't match! Try Again!", 0);
+                    UserInterface.showMessage("Uffu! Password didn't match! Try Again!", 0);
                     continue;
                 }
                 break;
@@ -120,11 +120,11 @@ public class Unibook {
             while (true);
             phoneNo = UserInput.getInstance().getPhoneNo();
             if (accountServiceImp.addNewAccount(userId, email, password, phoneNo)) {
-                UserInterface.showMsg("Successfully Signed up!", 0);
+                UserInterface.showMessage("Successfully Signed up!", 0);
                 break;
             }
             else {
-                UserInterface.showMsg("Uffu! Something naughty happens!", 0);
+                UserInterface.showMessage("Uffu! Something naughty happens!", 0);
                 tryAgain = true;
             }
         }
@@ -133,37 +133,37 @@ public class Unibook {
 
     public void forgotPassword() throws Exception {
         UserInterface.showHeader("Welcome to University Admission System");
-        UserInterface.showMsg("Forgot Password!", 0);
+        UserInterface.showMessage("Forgot Password!", 0);
         String email = UserInput.getInstance().getEmail();
         if (accountServiceImp.isUsedEmail(email)) {
 
             String code = RandomThing.getAlphaNumericString(6);
             accountServiceImp.sendEmail(email, code);
-            UserInterface.showMsg("We sent an email to you with a security code. Type it here!");
-            //UserInterface.showMsg("Generated Code: " + code, 1);
+            UserInterface.showMessage("We sent an email to you with a security code. Type it here!");
+            //UserInterface.showMessage("Generated Code: " + code, 1);
             String typedCode = UserInput.getInstance().getCode();
             if (code.equals(typedCode)) {
-                UserInterface.showMsg("Code matched!", 0);
+                UserInterface.showMessage("Code matched!", 0);
                 do {
                     String password = UserInput.getInstance().getPassword(0);
                     String confirmPassword = UserInput.getInstance().getPassword(1);
                     if (!password.equals(confirmPassword)) {
-                        UserInterface.showMsg("Uffu! Password didn't match! Try Again!", 0);
+                        UserInterface.showMessage("Uffu! Password didn't match! Try Again!", 0);
                         continue;
                     }
                     accountServiceImp.forgotPassword(email, password);
-                    UserInterface.showMsg("Password Changed Successfully!", 0);
+                    UserInterface.showMessage("Password Changed Successfully!", 0);
                     break;
                 }
                 while (true);
 
             }
             else {
-                UserInterface.showMsg("Wrong Code!", 0);
+                UserInterface.showMessage("Wrong Code!", 0);
             }
         }
         else {
-            UserInterface.showMsg("Wrong email!", 0);
+            UserInterface.showMessage("Wrong email!", 0);
         }
     }
 
@@ -179,7 +179,7 @@ public class Unibook {
                     //UserInterface.showHeader("Welcome to University Admission System");
                     UserInterface.showLoginMenu();
                     if (wrongChoice == true) {
-                        UserInterface.showMsg("Wrong Choice! Try again...");
+                        UserInterface.showMessage("Wrong Choice! Try again...");
                     }
                     option = UserInput.getInstance().inputOption();
                     if (option == 1) {
@@ -204,23 +204,23 @@ public class Unibook {
                 break;
             }
             UserInterface.showHeader("Welcome to University Admission System");
-            UserInterface.showMsg("Login please!");
+            UserInterface.showMessage("Login please!");
             String email;
             String password;
             email = UserInput.getInstance().getEmail();
             password = UserInput.getInstance().getPassword(0);
             Account account = accountServiceImp.login(email, password);
             if (account != null) {
-                UserInterface.showMsg("Successfully Logged in, Welcome!");
+                UserInterface.showMessage("Successfully Logged in, Welcome!");
                 account.run();
                 loggedIn = true;
             }
             else {
-                UserInterface.showMsg("Uffu! Invalid Username or password!", 0);
+                UserInterface.showMessage("Uffu! Invalid Username or password!", 0);
                 tryAgain = true;
             }
             if (loggedIn == true) {
-                //UserInterface.showMsg("Successfully Logged Out!");
+                //UserInterface.showMessage("Successfully Logged Out!");
                 break;
             }
         }

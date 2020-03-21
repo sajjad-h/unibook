@@ -116,8 +116,8 @@ public class Account {
         boolean loggedIn = true;
         do {
             UserInterface.showHeader("Welcome to University Admission System");
-            UserInterface.showMsg("Logged in with", 1);
-            UserInterface.showMsg( "(" + email + ")", 1);
+            UserInterface.showMessage("Logged in with", 1);
+            UserInterface.showMessage( "(" + email + ")", UserInterface.COMMON, 1);
 
             UserInterface.showUserStartMenu();
             option = UserInput.getInstance().inputOption();
@@ -132,20 +132,17 @@ public class Account {
             }
         }
         while (loggedIn);
-        UserInterface.showMsg("Successfully Logged Out!");
+        UserInterface.showMessage("Successfully Logged Out!");
     }
 
     public void showProfile() {
         System.out.println();
         System.out.println();
+        UserInterface.showMessage("Profile of '" + userInfo.getName().getNickName() + "'", UserInterface.COMMON, 0);
         userInfo.showUserInfo();
-        System.out.println();
-        System.out.println();
         showContactDetails();
-        System.out.println();
-        System.out.println();
         result.showResult();
-
+        System.out.println();
 
         int option = 0;
         boolean goBack = false;
@@ -157,7 +154,7 @@ public class Account {
                     goBack = true;
                     break;
                 default:
-                    UserInterface.showMsg("Try again!");
+                    UserInterface.showMessage("Try again!");
                     break;
             }
         }
@@ -165,8 +162,8 @@ public class Account {
     }
 
     public void showContactDetails() {
-        System.out.println("Contact Details: ");
         System.out.println();
+        UserInterface.showMessage("Contact Details: ", UserInterface.COMMON, -1);
         System.out.print("Phone no: ");
         System.out.println(phoneNo);
         System.out.print("E-mail: ");

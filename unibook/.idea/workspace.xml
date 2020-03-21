@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f03689-2a5a-4a13-a9a4-676e6dc69143" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/JavaMailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/JavaMailUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/JavaMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/unibook/main/java/net/ju/unibook/utils/JavaMailUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/entities/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Unibook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/main/Unibook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ju/unibook/utils/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unibook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/unibook.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,33 +99,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584180400985" />
+    <state x="651" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584539233511">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="651" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1600.860@0.0.1600.860" timestamp="1584539233511" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584163553360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584163553360" />
-    <state width="1877" height="742" key="GridCell.Tab.0.bottom" timestamp="1584337344311">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1557" height="215" key="GridCell.Tab.0.bottom" timestamp="1584777681662">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1557" height="215" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584777681662" />
     <state width="1877" height="742" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584337344311" />
-    <state width="1877" height="742" key="GridCell.Tab.0.center" timestamp="1584337344311">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1557" height="215" key="GridCell.Tab.0.center" timestamp="1584777681662">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1557" height="215" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584777681662" />
     <state width="1877" height="742" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584337344311" />
-    <state width="1877" height="742" key="GridCell.Tab.0.left" timestamp="1584337344311">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1557" height="215" key="GridCell.Tab.0.left" timestamp="1584777681662">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1557" height="215" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584777681662" />
     <state width="1877" height="742" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584337344311" />
-    <state width="1877" height="742" key="GridCell.Tab.0.right" timestamp="1584337344311">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1557" height="215" key="GridCell.Tab.0.right" timestamp="1584777681662">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="1557" height="215" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584777681662" />
     <state width="1877" height="742" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584337344311" />
     <state x="440" y="95" key="SettingsEditor" timestamp="1584163557149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584163557149" />
-    <state x="806" y="565" key="com.intellij.ide.util.TipDialog" timestamp="1584333598668">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="672" y="467" key="com.intellij.ide.util.TipDialog" timestamp="1584775576987">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="672" y="467" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584775576987" />
     <state x="806" y="565" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584333598668" />
   </component>
   <component name="XDebuggerManager">

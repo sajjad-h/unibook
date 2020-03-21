@@ -1,5 +1,7 @@
 package main.java.net.ju.unibook.entities;
 
+import main.java.net.ju.unibook.utils.UserInterface;
+
 public class Exam {
     private int userId;
     private String examName;
@@ -35,6 +37,8 @@ public class Exam {
     }
 
     public void showExamInfo() {
+        System.out.println();
+        UserInterface.showMessage(examName, "--|", -1);
         System.out.print("Exam Name: ");
         System.out.println(examName);
         System.out.print("Roll: ");

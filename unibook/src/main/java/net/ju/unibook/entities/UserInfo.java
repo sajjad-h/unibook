@@ -35,8 +35,8 @@ public class UserInfo {
     }
 
     public void showUserInfo() {
-        System.out.println("Personal Details: ");
         System.out.println();
+        UserInterface.showMessage("Personal Details: ", UserInterface.COMMON, -1);
         System.out.print("Name: ");
         System.out.println(name.getFullName());
         System.out.print("Father Name: ");
